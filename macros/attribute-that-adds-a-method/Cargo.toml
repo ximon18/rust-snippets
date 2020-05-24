@@ -1,0 +1,9 @@
+[package]
+name = "macro-that-adds-a-method"
+version = "0.0.1"
+authors = ["Ximon Eighteen <3304436+ximon18@users.noreply.github.com>"]
+description = "A Rust snippet that demonstrates how to add a method to an Impl using an attribute procedural macro."
+edition = "2018"
+
+[dependencies]
+command_macro = { path = "command_macro" }

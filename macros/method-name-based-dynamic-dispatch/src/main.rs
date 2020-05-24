@@ -1,5 +1,5 @@
 use std::env;
-use command_macro::{command_handler, command_func};
+use command_macro::{command_handler};
 
 pub struct App {
 }
@@ -10,12 +10,10 @@ impl App {
         App { }
     }
 
-    #[command_func]
     fn command_one(&self, _command_args: &[String]) {
         println!("You ran command one");
     }
 
-    #[command_func]
     fn command_two(&self, _command_args: &[String]) {
         println!("You ran command two");
     }

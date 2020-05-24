@@ -5,13 +5,6 @@ use quote::{quote, format_ident};
 use syn;
 use std::collections::HashMap;
 
-// TODO: use this attribute to detect functions to dispatch to instead of detecting
-// method names with prefix "command_".
-#[proc_macro_attribute]
-pub fn command_func(_attr: TokenStream, item: TokenStream) -> TokenStream {
-    item
-}
-
 #[proc_macro_attribute]
 pub fn command_handler(_attr: TokenStream, item: TokenStream) -> TokenStream {
     // Construct a representation of the impl Rust code we're inspecting as a

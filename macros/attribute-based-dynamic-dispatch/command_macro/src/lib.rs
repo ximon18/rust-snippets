@@ -70,7 +70,7 @@ pub fn command_handler(_attr: TokenStream, item: TokenStream) -> TokenStream {
     // a single "path" value (e.g. "one") and then capture the method name
     // ("handle_one") in this case,
     //
-    // Code such as the exampel above appear in the syntax tree like this:
+    // Code such as the example above appear in the syntax tree like this:
     //
     //   Tip: get a dump like this with: println!("DEBUG: {:#?}", item_impl);
     //
